@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TE-ASSIGN/static/css/main.1d8a7784.chunk.css",
+    "main.js": "/TE-ASSIGN/static/js/main.1fc17634.chunk.js",
+    "main.js.map": "/TE-ASSIGN/static/js/main.1fc17634.chunk.js.map",
+    "runtime-main.js": "/TE-ASSIGN/static/js/runtime-main.7828bba7.js",
+    "runtime-main.js.map": "/TE-ASSIGN/static/js/runtime-main.7828bba7.js.map",
+    "static/js/2.168b3a90.chunk.js": "/TE-ASSIGN/static/js/2.168b3a90.chunk.js",
+    "static/js/2.168b3a90.chunk.js.map": "/TE-ASSIGN/static/js/2.168b3a90.chunk.js.map",
+    "index.html": "/TE-ASSIGN/index.html",
+    "static/css/main.1d8a7784.chunk.css.map": "/TE-ASSIGN/static/css/main.1d8a7784.chunk.css.map",
+    "static/js/2.168b3a90.chunk.js.LICENSE.txt": "/TE-ASSIGN/static/js/2.168b3a90.chunk.js.LICENSE.txt",
+    "static/media/Headshot.5e643e4d.jpg": "/TE-ASSIGN/static/media/Headshot.5e643e4d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7828bba7.js",
+    "static/js/2.168b3a90.chunk.js",
+    "static/css/main.1d8a7784.chunk.css",
+    "static/js/main.1fc17634.chunk.js"
+  ]
+}
