@@ -95,8 +95,9 @@ function ProfileCard() {
         width="100%"
         justifyContent= "center"
         textAlign= "center"
+        fontSize= "18px"
         >
-      Web Technology Gap Lecture Submission
+      Web Technology Gap Lecture Assignment Submission
       </Box>
 
   </>
