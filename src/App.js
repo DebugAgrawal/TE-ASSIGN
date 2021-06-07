@@ -1,10 +1,10 @@
 import React from 'react'
-import HomePage from './HomePage'
+import ProfileCard from './components/ProfileCard'
 
 function App() {
   return (
     <div>
-      <HomePage/>
+      <ProfileCard/>
     </div>
   )
 }
