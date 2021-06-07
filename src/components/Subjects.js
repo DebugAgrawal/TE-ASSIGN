@@ -6,7 +6,7 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Chip from "@material-ui/core/Chip";
 import Link from "@material-ui/core/Link";
 import AssignmentTurnedInOutlinedIcon from "@material-ui/icons/AssignmentTurnedInOutlined";
-import esiot from "../esiot.json"
+import esiot from "../esiot.json";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     background: "#eeebdd",
     position: "relative",
+    fontSize: 24,
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   buttons: {
     display: "flex",
@@ -54,11 +58,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     background: "#eeebdd",
     flexWrap: "wrap",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   chip: {
     margin: 15,
     fontSize: 24,
-    width:"300px",
+    width: "300px",
     paddingTop: 30,
     paddingLeft: 25,
     paddingRight: 25,
@@ -67,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     background: "#eeebdd",
     letterSpacing: 3,
+    fontSize: 20,
   },
 }));
 
@@ -82,10 +90,8 @@ function Subjects() {
           style={{ height: "600px", padding: "20px" }}
           aria-label="outlined primary button group"
         >
-          <Button style={{ padding: "20px" }}>
-            Web Technology
-          </Button>
-          <Button style={{ padding: "20px",background: "#dcdcdc" }}>
+          <Button style={{ padding: "20px" }}>Web Technology</Button>
+          <Button style={{ padding: "20px", background: "#dcdcdc" }}>
             Embeded Systems and Internet Of Things
           </Button>
           <Button style={{ padding: "20px" }}>
@@ -101,14 +107,13 @@ function Subjects() {
       </Box>
       <Box className={classes.container} boxShadow={10}>
         {esiot.map((assignment) => (
-            <Link href={assignment.link} target="_blank">
-          <Chip
-            key={assignment.id}
-            size="large"
-            label={assignment.title}
-            className={classes.chip}
-            icon={<AssignmentTurnedInOutlinedIcon />}
-          />
+          <Link href={assignment.link} target="_blank">
+            <Chip
+              key={assignment.id}
+              label={assignment.title}
+              className={classes.chip}
+              icon={<AssignmentTurnedInOutlinedIcon />}
+            />
           </Link>
         ))}
       </Box>
