@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
@@ -6,7 +6,11 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Chip from "@material-ui/core/Chip";
 import Link from "@material-ui/core/Link";
 import AssignmentTurnedInOutlinedIcon from "@material-ui/icons/AssignmentTurnedInOutlined";
-import esiot from "../esiot.json";
+import esiot from "../assets/data/esiot.json";
+import wt from "../assets/data/wt.json";
+import smd from "../assets/data/smd.json";
+import daa from "../assets/data/daa.json";
+import spos from "../assets/data/spos.json";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     fontSize: 24,
     [theme.breakpoints.down("xs")]: {
-      width: "100%",
+      width: "90%",
     },
   },
   buttons: {
@@ -48,14 +52,26 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     flexDirection: "row",
-    width: "80%",
-    marginLeft: "10px",
+    width: "90%",
     alignItems: "center",
     justifyContent: "center",
-    paddingBottom: 50,
-    paddingTop: 50,
-    marginTop: 10,
+    paddingBottom: 40,
+    paddingTop: 40,
     marginBottom: 10,
+    background: "#eeebdd",
+    flexWrap: "wrap",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
+  },
+  containerHeadline: {
+    display: "flex",
+    flexDirection: "column",
+    width: "80%",
+    marginLeft: "10px",
+    paddingBottom: 50,
+    alignItems: "center",
+    justifyContent: "center",
     background: "#eeebdd",
     flexWrap: "wrap",
     [theme.breakpoints.down("xs")]: {
@@ -78,10 +94,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
+
 function Subjects() {
+  const [subject,setSubject]=useState(wt);
+  const [subjectName,setSubjectName]=useState("Web Technology");
   const classes = useStyles();
   return (
     <div className={classes.root}>
+    
       <Box className={classes.subjects} boxShadow={10}>
         <ButtonGroup
           orientation="vertical"
@@ -90,23 +112,27 @@ function Subjects() {
           style={{ height: "600px", padding: "20px" }}
           aria-label="outlined primary button group"
         >
-          <Button style={{ padding: "20px" }}>Web Technology</Button>
-          <Button style={{ padding: "20px", background: "#dcdcdc" }}>
+          <Button style={{ padding: "20px" }} onClick={()=>{return(setSubject(wt),setSubjectName("Web Technology"))}}>
+          Web Technology
+          </Button>
+          <Button style={{ padding: "20px"}} onClick={()=>{return(setSubject(esiot),setSubjectName("Embeded Systems and IOT"))}}>
             Embeded Systems and Internet Of Things
           </Button>
-          <Button style={{ padding: "20px" }}>
+          <Button style={{ padding: "20px" }} onClick={()=>{return(setSubject(smd),setSubjectName("Software Modeling and Design"))}}>
             Software Modeling and Design
           </Button>
-          <Button style={{ padding: "20px" }}>
+          <Button style={{ padding: "20px" }} onClick={()=>{return(setSubject(daa),setSubjectName("Design and Analysis of Algorithms"))}} >
             Design and Analysis of Algorithms
           </Button>
-          <Button style={{ padding: "20px" }}>
+          <Button style={{ padding: "20px" }} onClick={()=>{return(setSubject(spos),setSubjectName("System Programming and OS"))}}>
             System Programming and Operating Systems
           </Button>
         </ButtonGroup>
       </Box>
+      <Box className={classes.containerHeadline} boxShadow={10}>
+      <h1>{subjectName}</h1>
       <Box className={classes.container} boxShadow={10}>
-        {esiot.map((assignment) => (
+        {subject.map((assignment) => (
           <Link href={assignment.link} target="_blank">
             <Chip
               key={assignment.id}
@@ -116,6 +142,7 @@ function Subjects() {
             />
           </Link>
         ))}
+      </Box>
       </Box>
     </div>
   );
