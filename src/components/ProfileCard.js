@@ -61,7 +61,7 @@ function ProfileCard() {
         <Avatar alt="Deepak Agrawal" src={headshot} className={classes.large} />
         <CardContent className={classes.details}>
           <Typography className={classes.title} color="textSecondary">
-            Deepak Vijay Agrawal
+            Deepak Agrawal
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
             Full Stack Engineer [TE A 03]
