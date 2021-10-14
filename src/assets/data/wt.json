@@ -1,61 +1,21 @@
 [
     {
       "id": 1,
-      "title": "Assignment 1",
-      "link": "https://drive.google.com/file/d/10VYNDjf5HgCUqzukEVjZUMfNlR66xXAh/view?usp=sharing"
+      "title": "Assignments 1 - 5",
+      "link": "https://drive.google.com/file/d/16JIjYEfBNkp_qWTjr9BiKJ3gS6jOJg58/view?usp=sharing"
     },
     {
       "id": 2,
-      "title": "Assignment 2",
-      "link": "https://drive.google.com/file/d/1GfG48UBZ-CV7A9SdMhzbM1oi2DKIMSmX/view?usp=sharing"
+      "title": "Assignments 6 - 10",
+      "link": "https://drive.google.com/file/d/16JIjYEfBNkp_qWTjr9BiKJ3gS6jOJg58/view?usp=sharing"
     },
     {
       "id": 3,
-      "title": "Assignment 3",
-      "link": "https://drive.google.com/file/d/12dpgBdyV8FGI1U2ECGGnvaqGdvB_Q5JN/view?usp=sharing"
-    },
-    {
-      "id": 4,
-      "title": "Assignment 4",
-      "link": "https://drive.google.com/file/d/12HBUxLAVdRsSrowuFDjDD2Hn72DCfpj6/view?usp=sharing"
-    },
-    {
-      "id": 5,
-      "title": "Assignment 5",
-      "link": "https://drive.google.com/file/d/15u7DMAABNKwNFyUS8kuoWsmaT69dgA9A/view?usp=sharing"
-    },
-    {
-      "id": 6,
-      "title": "Assignment 6",
-      "link": "https://drive.google.com/file/d/17z64taSpLfYct1gucVhoNkXVRw_twqfD/view?usp=sharing"
-    },
-    {
-      "id": 7,
-      "title": "Assignment 7",
-      "link": "https://drive.google.com/file/d/13xUHcKY7kQRLKl1ezHqJPsLxoYtlFrYn/view?usp=sharing"
-    },
-    {
-      "id": 8,
-      "title": "Assignment 8",
-      "link": "https://drive.google.com/file/d/1CR6dqujiwISOBNImNYohG9lGmQgPfdSG/view?usp=sharing"
-    },
-    {
-      "id": 9,
-      "title": "Assignment 9",
-      "link": "https://drive.google.com/file/d/1KCRhdsZlZXcHsXQ7Ls_1KbWfVjDe3eMn/view?usp=sharing"
-    },
-    {
-      "id": 10,
-      "title": "Assignment 10",
-      "link": "https://drive.google.com/file/d/1YeJLREreQwXFlAzI_S4MG2lCBqK4SFi9/view?usp=sharing"
-    },
-    {
-      "id": 11,
       "title": "PBL",
       "link": "https://drive.google.com/file/d/1YFNTg5ySiepb01uZq5dXRtumfzJgJ8cI/view?usp=sharing"
     },
     {
-      "id": 12,
+      "id": 4,
       "title": "GAP",
       "link": "https://debugagrawal.github.io/TE-ASSIGN/"
     }
