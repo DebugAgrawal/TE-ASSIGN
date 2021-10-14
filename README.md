@@ -14,5 +14,5 @@
 - ### Software Modeling and Design
 
 <p align="center">
-<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FDebugAgrawal%2FTE-ASSIGN&label=Gazers&labelColor=%23dce775&countColor=%23000000&style=flat" />
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FDebugAgrawal%2FTE-ASSIGN&label=Hello+Visitor&labelColor=%23dce775&countColor=%23000000&style=flat" />
 </p>
